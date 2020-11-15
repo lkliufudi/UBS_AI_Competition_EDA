@@ -6,6 +6,6 @@ seaborn==0.11.0
 PIL
 warnings==3.7.0
 plotly==4.12.0
-matplotlib.pyplot
+matplotlib==3.2.1
 plotly.express
 plotly.graph_objects
