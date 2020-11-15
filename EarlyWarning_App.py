@@ -175,13 +175,13 @@ if st.checkbox("Sales_Change & Employee_Size & Google_Review"):
     st.pyplot()
 
 # Show Plots
-if st.checkbox("Distribution of Supermarket_within_5_miles"):
-    data = explore_data(my_dataset)
+#if st.checkbox("Distribution of Supermarket_within_5_miles"):
+    #data = explore_data(my_dataset)
     #plt.ylabel('Probability')
     #plt.xlabel('# Supermarket_within_5_miles')
     #plt.title('Distribution of Supermarket_within_5_miles')
-    st.write(plt.hist(data['Supermarket_within_5_miles'],density=True))
-    st.pyplot()
+    #st.write(plt.hist(data['Supermarket_within_5_miles'],density=True))
+    #st.pyplot()
 
 
 # About
