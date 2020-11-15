@@ -132,7 +132,7 @@ if st.checkbox("Simple Correlation Plot with Seaborn "):
 
 # Show Plots
 if st.checkbox("Distribution of google scores in every county"):
-    plt.figure(figsize=(15,10))
+    #plt.figure(figsize=(15,10))
     data = explore_data(my_dataset)
     st.write(px.box(data,x='County',y='Google_Scores',title='Distribution of google scores in every county',template='seaborn'))
     st.pyplot()
@@ -162,7 +162,7 @@ if st.checkbox("Number of close stores in different county"):
 # Show Plots
 if st.checkbox("Sales_Change & Employee_Change"):
     data = explore_data(my_dataset)
-    plt.figure(figsize=(15,10))
+    #plt.figure(figsize=(15,10))
     st.write(px.scatter(data, x='Employee_Change', y='Sales_Change', color='target', template='ggplot2'))
     st.pyplot()
 
@@ -170,7 +170,7 @@ if st.checkbox("Sales_Change & Employee_Change"):
 # Show Plots
 if st.checkbox("Sales_Change & Employee_Size & Google_Review"):
     data = explore_data(my_dataset)
-    plt.figure(figsize=(15,10))
+    #plt.figure(figsize=(15,10))
     st.write(px.scatter_3d(data, x='Google_Reviews', y='Credit Score Alpha', z='Sales_Change', color='target', template='ggplot2', size='Google_Scores'))
     st.pyplot()
 
